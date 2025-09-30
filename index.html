@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Styling & JS Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✨ Advanced Styling & JavaScript Project ✨</h1>
+    <button onclick="changeBackground()">🎨 Change Background</button>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <!-- Responsive Section -->
+  <section>
+    <h2>Responsive Design Example</h2>
+    <p>This layout adapts for desktop, tablet, and mobile screens.</p>
+  </section>
+
+  <!-- Quiz Section -->
+  <section>
+    <h2>Interactive Quiz</h2>
+    <div id="quiz-container">
+      <p id="question"></p>
+      <div id="options"></div>
+      <p id="explanation"></p>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+      <p id="progress"></p>
+      <p id="timer"></p>
+    </div>
+  </section>
+
+  <!-- Image Carousel -->
+  <section>
+    <h2>Image Carousel</h2>
+    <div class="carousel">
+      <img id="carouselImage" src="https://picsum.photos/400/200?random=1" alt="carousel">
+      <div class="controls">
+        <button onclick="prevImage()">⬅ Prev</button>
+        <button onclick="nextImage()">Next ➡</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jokes API -->
+  <section>
+    <h2>Random Jokes</h2>
+    <button onclick="fetchJoke()">😂 Get Joke</button>
+    <div id="joke-container" class="joke-grid"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

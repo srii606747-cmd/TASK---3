@@ -1,0 +1,109 @@
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  transition: background 0.5s ease, color 0.5s ease;
+  background: #f9f9f9;
+  color: #222;
+}
+header {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+header h1 {
+  flex: 1 1 100%;
+}
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #0056b3;
+}
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* Quiz */
+#options button {
+  display: block;
+  margin: 8px 0;
+  width: 200px;
+  text-align: left;
+}
+
+/* Carousel */
+.carousel {
+  text-align: center;
+  position: relative;
+}
+.carousel img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  max-width: 100%;
+}
+.carousel img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Jokes */
+.joke-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+.joke-grid div {
+  background: #fff3cd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  color: #333;
+}
+
+/* Dark Mode */
+.dark {
+  background: #121212;
+  color: #eee;
+}
+.dark section {
+  background: #1e1e1e;
+  border-color: #444;
+}
+.dark .joke-grid div {
+  background: #333;
+  color: #eee;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+}
+@media (max-width: 480px) {
+  body { font-size: 14px; }
+}
